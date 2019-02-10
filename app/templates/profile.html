@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block main %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" type=text/css /> 
+    </head>
+
+
+
+<body>
+
+
+
+<div id="bio">
+    <img class ='self' src="{{ url_for('static', filename='dogekek.jpg')}}"/>
+    <p class ="name"> Shifty Sign</p>
+    <p>@lul69</p>
+    <p>Kingston,Jamaica</p>
+    <p>Joined {{ ctime }}</p>
+    
+    
+</div>
+<hr>
+<div id ="stome">
+<p>I love school. I love work. I am a good person.</p>
+<div class ="row">
+    <div class ="column">69</div>
+    <div class ="column">69</div>
+    <div class ="column">68</div>
+</div>
+<div class ="row">
+    <div class ="column">Posts</div>
+    <div class ="column">Following</div>
+    <div class ="column">Followers</div>
+</div>
+
+<button id="but">Follow</button>
+</div>
+</body>
+</html>
+{% endblock %}
